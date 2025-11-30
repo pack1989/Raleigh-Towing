@@ -18,7 +18,12 @@
       --accent:#f97316;
       --max:1150px;
     }
-    *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,Arial,sans-serif;}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:system-ui,Arial,sans-serif;
+    }
     body{
       background:radial-gradient(circle,#111827,#05070a);
       color:var(--text);
@@ -26,7 +31,9 @@
 
     /* NAVBAR */
     header{
-      position:sticky;top:0;z-index:10;
+      position:sticky;
+      top:0;
+      z-index:10;
       background:rgba(0,0,0,.75);
       backdrop-filter:blur(12px);
       border-bottom:1px solid #111;
@@ -40,26 +47,40 @@
       justify-content:space-between;
     }
     .brand{
-      display:flex;align-items:center;gap:.6rem;
+      display:flex;
+      align-items:center;
+      gap:.6rem;
     }
     .brand-icon{
       background:linear-gradient(135deg,#fde047,#f97316,#dc2626);
-      width:42px;height:42px;
-      display:flex;justify-content:center;align-items:center;
+      width:42px;
+      height:42px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
       font-weight:900;
       font-size:1.15rem;
-      border-radius:10px;color:#0f0f0f;
+      border-radius:10px;
+      color:#0f0f0f;
     }
-    .brand small{color:var(--muted);font-size:.78rem;}
+    .brand small{
+      color:var(--muted);
+      font-size:.78rem;
+    }
 
     .btn{
-      padding:.65rem 1.25rem;border-radius:999px;
-      font-weight:600;font-size:.9rem;
-      text-decoration:none;cursor:pointer;white-space:nowrap;
+      padding:.65rem 1.25rem;
+      border-radius:999px;
+      font-weight:600;
+      font-size:.9rem;
+      text-decoration:none;
+      cursor:pointer;
+      white-space:nowrap;
     }
     .btn-primary{
       background:linear-gradient(135deg,#dc2626,#f97316);
       color:white;
+      border:none;
     }
     .btn-outline{
       border:1px solid var(--border);
@@ -68,97 +89,255 @@
     }
 
     /* HERO */
-    section{padding:4.3rem 1.5rem;}
-    .hero-grid{
-      max-width:var(--max);margin:auto;
-      display:grid;grid-template-columns:1.5fr 1fr;
-      gap:2rem;align-items:center;
+    section{
+      padding:4.3rem 1.5rem;
     }
-    h1{font-size:2.65rem;line-height:1.12;margin-bottom:.75rem;}
+    .hero-grid{
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:1.5fr 1fr;
+      gap:2rem;
+      align-items:center;
+    }
+    h1{
+      font-size:2.65rem;
+      line-height:1.12;
+      margin-bottom:.75rem;
+    }
     h1 span{
       background:linear-gradient(80deg,#fde047,#f97316);
-      -webkit-background-clip:text;color:transparent;
+      -webkit-background-clip:text;
+      color:transparent;
     }
-    .hero-sub{color:var(--muted);max-width:500px;font-size:1rem;margin-bottom:1.15rem;}
+    .hero-sub{
+      color:var(--muted);
+      max-width:500px;
+      font-size:1rem;
+      margin-bottom:1.15rem;
+    }
     .hero-badges span{
       border:1px solid var(--border);
-      padding:.28rem .7rem;font-size:.78rem;
-      border-radius:999px;color:#e5e7eb;margin-right:.35rem;
+      padding:.28rem .7rem;
+      font-size:.78rem;
+      border-radius:999px;
+      color:#e5e7eb;
+      margin-right:.35rem;
       display:inline-block;
     }
-    .hero-actions{margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap;}
+    .hero-actions{
+      margin-top:1.2rem;
+      display:flex;
+      gap:.8rem;
+      flex-wrap:wrap;
+    }
 
     .info-card{
-      background:var(--card);border:1px solid var(--border);
-      padding:1.2rem;border-radius:14px;
+      background:var(--card);
+      border:1px solid var(--border);
+      padding:1.2rem;
+      border-radius:14px;
     }
-    h2{font-size:1.7rem;margin-bottom:1rem;}
+    h2{
+      font-size:1.7rem;
+      margin-bottom:1rem;
+    }
 
     /* SERVICES */
-    #services{background:#0a0d13;border-top:1px solid #000;border-bottom:1px solid #000;}
+    #services{
+      background:#0a0d13;
+      border-top:1px solid #000;
+      border-bottom:1px solid #000;
+    }
+    #services h2{
+      max-width:var(--max);
+      margin:0 auto 1.5rem;
+      text-align:center;
+    }
     .services-grid{
-      max-width:var(--max);margin:auto;
-      display:grid;grid-template-columns:repeat(3,1fr);
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
       gap:1.2rem;
     }
     .service-card{
-      background:var(--card);border:1px solid var(--border);
-      padding:1rem;border-radius:12px;font-size:.95rem;
+      background:var(--card);
+      border:1px solid var(--border);
+      padding:1rem;
+      border-radius:12px;
+      font-size:.95rem;
     }
-    .service-card p{color:var(--muted);margin:.4rem 0 .6rem;}
+    .service-card p{
+      color:var(--muted);
+      margin:.4rem 0 .6rem;
+    }
     .tag{
-      display:inline-block;border-radius:999px;border:1px solid #475569;
-      padding:.15rem .55rem;font-size:.72rem;margin:.1rem .15rem;
+      display:inline-block;
+      border-radius:999px;
+      border:1px solid #475569;
+      padding:.15rem .55rem;
+      font-size:.72rem;
+      margin:.1rem .15rem;
     }
 
     /* AREA + REVIEWS */
     .split{
-      max-width:var(--max);margin:auto;
-      display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1.5rem;
     }
-    .box{background:var(--card);border:1px solid var(--border);padding:1.3rem;border-radius:12px;}
-    .review{background:#0c0f17;border:1px solid #1e293b;padding:.6rem;border-radius:8px;margin-bottom:.45rem;font-size:.88rem;}
-    .stars{color:#fde047;font-size:1.25rem;}
+    .box{
+      background:var(--card);
+      border:1px solid var(--border);
+      padding:1.3rem;
+      border-radius:12px;
+    }
+    .review{
+      background:#0c0f17;
+      border:1px solid #1e293b;
+      padding:.6rem;
+      border-radius:8px;
+      margin-bottom:.45rem;
+      font-size:.88rem;
+    }
+    .stars{
+      color:#fde047;
+      font-size:1.25rem;
+    }
 
     /* CONTACT */
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;}
-    label{font-size:.83rem;margin-bottom:.18rem;display:block;}
-    input,textarea{
-      width:100%;background:#0a0d13;border:1px solid #334155;
-      padding:.55rem .6rem;border-radius:8px;color:white;
+    .contact-wrap{
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1.5rem;
     }
-    textarea{min-height:115px;}
-    input:focus,textarea:focus{border-color:#facc15;outline:none;}
-    .contact-wrap{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:.7rem;
+    }
+    label{
+      font-size:.83rem;
+      margin-bottom:.18rem;
+      display:block;
+    }
+    input,textarea{
+      width:100%;
+      background:#0a0d13;
+      border:1px solid #334155;
+      padding:.55rem .6rem;
+      border-radius:8px;
+      color:white;
+    }
+    textarea{
+      min-height:115px;
+    }
+    input:focus,textarea:focus{
+      outline:none;
+      border-color:#facc15;
+    }
 
-    footer{text-align:center;color:var(--muted);padding:2rem 0;font-size:.85rem;margin-top:3rem;}
+    footer{
+      text-align:center;
+      color:var(--muted);
+      padding:2rem 0;
+      font-size:.85rem;
+      margin-top:3rem;
+    }
 
     /* CHATBOT */
     .chat-toggle{
-      position:fixed;right:1.3rem;bottom:1.3rem;
-      background:#111827;border-radius:999px;
-      border:1px solid #344054;padding:.7rem 1.2rem;
-      cursor:pointer;font-size:.85rem;
+      position:fixed;
+      right:1.3rem;
+      bottom:1.3rem;
+      background:#111827;
+      border-radius:999px;
+      border:1px solid #344054;
+      padding:.7rem 1.2rem;
+      cursor:pointer;
+      font-size:.85rem;
     }
     .chatbox{
-      position:fixed;right:1.3rem;bottom:4.7rem;width:320px;
-      background:#020617;border:1px solid #334155;border-radius:14px;
-      max-height:440px;overflow:hidden;display:none;flex-direction:column;
+      position:fixed;
+      right:1.3rem;
+      bottom:4.7rem;
+      width:320px;
+      background:#020617;
+      border:1px solid #334155;
+      border-radius:14px;
+      max-height:440px;
+      overflow:hidden;
+      display:none;
+      flex-direction:column;
     }
-    .chatbox.open{display:flex;}
-    .chat-body{padding:1rem;flex:1;overflow-y:auto;}
-    .msg{padding:.6rem;border-radius:10px;margin-bottom:.4rem;font-size:.85rem;}
-    .agent{background:#0b1120;border:1px solid #3b82f6;}
-    .user{background:#f97316;color:#fff;}
-    .chat-input{border-top:1px solid #1e293b;padding:.6rem;display:flex;gap:.5rem;}
-    .chat-input input{flex:1;border-radius:999px;}
-    .chat-input button{width:36px;height:36px;border-radius:999px;border:none;background:#16a34a;cursor:pointer;}
+    .chatbox.open{
+      display:flex;
+    }
+    .chat-body{
+      padding:1rem;
+      flex:1;
+      overflow-y:auto;
+    }
+    .msg{
+      padding:.6rem;
+      border-radius:10px;
+      margin-bottom:.4rem;
+      font-size:.85rem;
+    }
+    .agent{
+      background:#0b1120;
+      border:1px solid #3b82f6;
+    }
+    .user{
+      background:#f97316;
+      color:#fff;
+    }
+    .chat-input{
+      border-top:1px solid #1e293b;
+      padding:.6rem;
+      display:flex;
+      gap:.5rem;
+    }
+    .chat-input input{
+      flex:1;
+      border-radius:999px;
+      border:1px solid #334155;
+      background:#020617;
+      color:white;
+      padding:.45rem .6rem;
+      font-size:.85rem;
+    }
+    .chat-input button{
+      width:36px;
+      height:36px;
+      border-radius:999px;
+      border:none;
+      background:#16a34a;
+      cursor:pointer;
+      color:white;
+      font-weight:bold;
+    }
 
     @media(max-width:900px){
-      .hero-grid,.split,.contact-wrap{grid-template-columns:1fr;}
-      .services-grid{grid-template-columns:1fr 1fr;}
+      .hero-grid,
+      .split,
+      .contact-wrap{
+        grid-template-columns:1fr;
+      }
+      .services-grid{
+        grid-template-columns:1fr 1fr;
+      }
     }
-    @media(max-width:600px){.services-grid{grid-template-columns:1fr;}}
+    @media(max-width:600px){
+      .services-grid{
+        grid-template-columns:1fr;
+      }
+    }
   </style>
 </head>
 
@@ -182,21 +361,27 @@
   <div class="hero-grid">
     <div>
       <h1>Fast, reliable towing when <span>you need help now.</span></h1>
-      <p class="hero-sub">Serving Raleigh 24 hours a day with towing, roadside assistance, jump starts & lockouts.</p>
+      <p class="hero-sub">
+        Serving Raleigh 24/7 with towing, roadside assistance, jump starts &amp; lockouts.
+      </p>
       <div class="hero-badges">
         <span>24/7 Emergency Towing</span>
         <span>Roadside Assistance</span>
         <span>Local Service</span>
       </div>
       <div class="hero-actions">
+        <!-- TODO: replace XXXXXXXXXX with real phone number -->
         <a href="tel:+1XXXXXXXXXX" class="btn btn-primary">📞 Call Now</a>
         <a href="#contact" class="btn btn-outline">Request Tow / Quote</a>
       </div>
-      <p style="color:var(--muted);margin-top:.8rem;">Average ETA: 30–60 minutes depending on location.</p>
+      <p style="color:var(--muted);margin-top:.8rem;">
+        Average ETA: 30–60 minutes depending on location.
+      </p>
     </div>
 
     <div class="info-card">
       <h3>24/7 Dispatch Hotline</h3>
+      <!-- TODO: replace (XXX) XXX-XXXX with real phone display -->
       <h2>(XXX) XXX-XXXX</h2>
       <p>Available anytime — day or night.</p>
     </div>
@@ -215,13 +400,13 @@
     </div>
     <div class="service-card">
       <h3>Medium Duty Towing</h3>
-      <p>Work trucks & small commercial vehicles handled with care.</p>
+      <p>Work trucks &amp; small commercial vehicles handled with care.</p>
       <span class="tag">Fleet</span>
       <span class="tag">Commercial</span>
     </div>
     <div class="service-card">
       <h3>Roadside Assistance</h3>
-      <p>Jump starts, flats, fuel delivery & lockouts when you’re stuck.</p>
+      <p>Jump starts, flats, fuel delivery &amp; lockouts when you’re stuck.</p>
       <span class="tag">Fast Dispatch</span>
     </div>
   </div>
@@ -232,14 +417,20 @@
   <div class="split">
     <div class="box">
       <h2>Service Area</h2>
-      <p>Raleigh, Cary, Garner, Knightdale, Clayton, Wake Forest & surrounding areas.</p>
+      <p>
+        Raleigh, Cary, Garner, Knightdale, Clayton, Wake Forest &amp; surrounding areas.
+        Not sure if you’re in range? Reach out and we’ll let you know.
+      </p>
     </div>
     <div class="box">
       <h2>Feedback</h2>
       <p><span class="stars">★★★★★</span> Trusted by drivers across Raleigh.</p>
       <div class="review">"They helped fast and kept pricing fair."</div>
       <div class="review">"Friendly and professional — highly recommend."</div>
-      <div class="review">"Got my truck off the highway safe & quick."</div>
+      <div class="review">"Got my truck off the highway safe &amp; quick."</div>
+      <p style="color:var(--muted);font-size:.8rem;margin-top:.4rem;">
+        Quotes are example text — replace with your real reviews later.
+      </p>
     </div>
   </div>
 </section>
@@ -252,25 +443,39 @@
       <ul style="color:var(--muted);padding-left:1rem;margin-top:.5rem;">
         <li>24/7 emergency towing</li>
         <li>Local Raleigh technicians</li>
-        <li>Fair pricing & fast response</li>
+        <li>Fair pricing &amp; fast response</li>
       </ul>
     </div>
 
     <div class="box">
       <h2>Request Tow or Quote</h2>
 
-      <!-- FIXED WORKING FORM -->
+      <!-- FORM: FormSubmit + redirect to thank-you page -->
       <form action="https://formsubmit.co/onasamune@yahoo.com" method="POST">
+        <!-- Redirect after successful submission -->
         <input type="hidden" name="_next" value="https://pack1989.github.io/Raleigh-Towing/thank-you.html">
+        <!-- FormSubmit options -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="New Tow Request | Raleigh Towing & Recovery">
 
         <div class="contact-grid">
-          <div><label>First Name</label><input type="text" name="First Name" required></div>
-          <div><label>Last Name</label><input type="text" name="Last Name"></div>
-          <div><label>Email</label><input type="email" name="Email" required></div>
-          <div><label>Phone</label><input type="tel" name="Phone" required></div>
+          <div>
+            <label>First Name</label>
+            <input type="text" name="First Name" required>
+          </div>
+          <div>
+            <label>Last Name</label>
+            <input type="text" name="Last Name">
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" name="Email" required>
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="tel" name="Phone" required>
+          </div>
         </div>
 
         <label style="margin-top:.6rem;">Pickup Location</label>
@@ -286,14 +491,16 @@
 </section>
 
 <footer>
-  © <span id="year"></span> Raleigh Towing & Recovery · All Rights Reserved
+  © <span id="year"></span> Raleigh Towing &amp; Recovery · All Rights Reserved
 </footer>
 
 <!-- CHAT -->
 <div class="chat-toggle" id="chat-toggle">💬 Chat</div>
 <div class="chatbox" id="chatbox">
   <div class="chat-body" id="chat-body">
-    <div class="msg agent">Hi! Ask about pricing, ETA or service area. For emergencies please call.</div>
+    <div class="msg agent">
+      Hi! Ask about pricing, ETA or service area. For emergencies please call us directly.
+    </div>
   </div>
   <div class="chat-input">
     <input id="chat-input-field" type="text" placeholder="Ask a question...">
@@ -302,33 +509,56 @@
 </div>
 
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
+  // Set year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-const box=document.getElementById('chatbox');
-document.getElementById('chat-toggle').onclick=()=>box.classList.toggle('open');
+  // Chatbox toggle
+  const chatBox = document.getElementById('chatbox');
+  document.getElementById('chat-toggle').onclick = () => {
+    chatBox.classList.toggle('open');
+  };
 
-function send(u){
-  let d=document.createElement('div');
-  d.className='msg '+u.t;d.textContent=u.text;
-  document.getElementById('chat-body').appendChild(d);
-}
+  const chatBody = document.getElementById('chat-body');
+  const chatInput = document.getElementById('chat-input-field');
+  const chatSend = document.getElementById('chat-send');
 
-document.getElementById('chat-send').onclick=runChat;
+  function appendMsg(text, type){
+    const div = document.createElement('div');
+    div.className = 'msg ' + type;
+    div.textContent = text;
+    chatBody.appendChild(div);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
 
-function runChat(){
-  let t=document.getElementById('chat-input-field').value.trim().toLowerCase();
-  if(!t)return;send({text:t,t:'user'});document.getElementById('chat-input-field').value='';
+  function runChat(){
+    const raw = chatInput.value.trim();
+    if(!raw) return;
+    appendMsg(raw, 'user');
+    chatInput.value = '';
 
-  let r='Thanks for asking! Please call for details.';
-  if(t.includes('eta')||t.includes('how long'))r='Avg ETA 30–60 minutes depending on location.';
-  else if(t.includes('price')||t.includes('cost')||t.includes('how much'))r='Pricing is distance/vehicle based. Request a quote above.';
-  else if(t.includes('area')||t.includes('where')||t.includes('service'))
-    r='We serve Raleigh + surrounding towns.';
-  else if(t.includes('call')||t.includes('phone')||t.includes('number'))
-    r='Call dispatch 24/7 at (XXX) XXX-XXXX.';
+    const t = raw.toLowerCase();
+    let reply = 'Thanks for asking! Please call for more details so we can help you faster.';
 
-  setTimeout(()=>send({text:r,t:'agent'}),350);
-}
+    if(t.includes('eta') || t.includes('how long')){
+      reply = 'Average ETA is about 30–60 minutes depending on where you are and traffic.';
+    } else if(t.includes('price') || t.includes('cost') || t.includes('how much')){
+      reply = 'Pricing depends on distance, vehicle type and situation. You can request a quote in the form above.';
+    } else if(t.includes('area') || t.includes('where') || t.includes('service')){
+      reply = 'We serve Raleigh and surrounding towns like Cary, Garner, Knightdale, Clayton and more.';
+    } else if(t.includes('call') || t.includes('phone') || t.includes('number')){
+      reply = 'You can reach our dispatch line 24/7 at your main phone number.';
+    }
+
+    setTimeout(() => appendMsg(reply, 'agent'), 300);
+  }
+
+  chatSend.onclick = runChat;
+  chatInput.addEventListener('keydown', e => {
+    if(e.key === 'Enter'){
+      e.preventDefault();
+      runChat();
+    }
+  });
 </script>
 
 </body>
